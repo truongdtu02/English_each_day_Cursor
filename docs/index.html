@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Learning — Days Browser</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 English Learning</h1>
+    <div class="config">
+      <input id="owner" placeholder="GitHub owner" />
+      <input id="repo" placeholder="GitHub repo" />
+      <input id="branch" placeholder="Branch" value="main" />
+      <button id="saveCfg">Save</button>
+      <a id="openRepo" target="_blank">Open Repo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="actions">
+      <input id="search" placeholder="Search sentences / keywords" />
+      <button id="reload">Reload Days</button>
+      <button id="newDay">New Day (via GitHub UI)</button>
+      <button id="buildReadme">Build README content</button>
+    </section>
+
+    <section id="days"></section>
+
+    <section>
+      <h2>README Preview</h2>
+      <textarea id="readmePreview" rows="12"></textarea>
+      <div class="row">
+        <button id="copyReadme">Copy</button>
+        <a id="editReadme" target="_blank">Open README edit</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
